@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { HeroUIProvider } from '@/app/providers';
+import { HeroUIProvider, ThemeProvider } from '@/app/providers';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className='antialiased'>
-        <HeroUIProvider>{children}</HeroUIProvider>
+        <HeroUIProvider>
+          <ThemeProvider>{children}</ThemeProvider>
+        </HeroUIProvider>
       </body>
     </html>
   );
