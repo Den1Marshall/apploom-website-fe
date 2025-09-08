@@ -664,7 +664,7 @@ export const SignupPage: FC = () => {
           <p className='text-gray-600 dark:text-gray-300'>
             Already have an account?{' '}
             <Link
-              href='/login'
+              href='/signin'
               className='text-blue-600 hover:text-blue-700 font-semibold'
             >
               Sign in
