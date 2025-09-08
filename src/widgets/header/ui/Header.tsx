@@ -83,7 +83,7 @@ export const Header: FC = () => {
 
         <NavbarItem>
           <Link
-            href='#showcase'
+            href='/support'
             className='text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors'
           >
             Support
