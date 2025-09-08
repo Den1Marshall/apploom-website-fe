@@ -19,14 +19,14 @@ export const Header: FC = () => {
       height='60px'
     >
       <NavbarBrand>
-        <div className='flex items-center gap-2'>
+        <Link href='/' className='flex items-center gap-2'>
           <div className='w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center'>
             <span className='text-white font-bold text-sm'>A</span>
           </div>
           <p className='font-bold text-xl tracking-tight text-gray-900 dark:text-white'>
             Apploom
           </p>
-        </div>
+        </Link>
       </NavbarBrand>
 
       <NavbarContent className='hidden sm:flex gap-8' justify='center'>
@@ -74,7 +74,7 @@ export const Header: FC = () => {
 
         <NavbarItem>
           <Link
-            href='#pricing'
+            href='/pricing'
             className='text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors'
           >
             Pricing
@@ -98,7 +98,7 @@ export const Header: FC = () => {
             size='sm'
             className='text-sm font-medium'
             as={Link}
-            href='/login'
+            href='/signin'
           >
             Sign In
           </Button>
